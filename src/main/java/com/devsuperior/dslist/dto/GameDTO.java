@@ -20,7 +20,8 @@ public class GameDTO {
 
     public GameDTO(Game entity) {
 
-        BeanUtils.copyProperties(entity, this);  // Esta linha copia todas as propriedadas de um outro lugar (entidade), quando os campos são os mesmos nesta classe (DTO).
+        BeanUtils.copyProperties(entity, this);  /* Esta linha copia todas as propriedadas de um outro lugar (entidade), quando os campos são os mesmos nesta classe (DTO).
+                                                          *IMPORTANTE* Por usar o BeanUtils, os setters tem que, obrigatoriamente, serem criados. */
 
 //        id = entity.getId();
 //        title = entity.getTitle();
